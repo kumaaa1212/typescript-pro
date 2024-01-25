@@ -1,4 +1,16 @@
 export default function UnionType() {
+
+
+// union制御方法1
+const a : string | number | boolean = "a";
+const b :string = "b";
+
+const c : string | number | null = localStorage.getItem('userId');
+// const d: string = c
+
+
+
+// union制御方法2
   type Progress = Start | Loading | Success | Fail;
   type Start = {types: "start"; color: string; };
   type Loading = {types: "loading"; percent: number; };
